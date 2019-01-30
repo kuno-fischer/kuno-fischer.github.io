@@ -20,6 +20,100 @@
 	<title>KITA Lietzenburg Berlin </title>
 </head>
 <body class="debug">
+	
+<!-- temporary job advertisement START -->
+	
+	    <style>
+        #hire {
+            position: absolute;
+            
+            top:0;
+            left: 5%;
+            margin-left: -20px;
+            --height: 50px;
+            width: 110px;
+            
+            padding: 10px;
+            padding-top: 74px;
+            padding-bottom: 20px;
+            
+            background-color: #ff6347;
+            
+            z-index: 2;
+            font-size: 80%;
+            color: white;
+            text-align: center;
+            line-height: 130%;
+            
+            box-shadow: 0 0 30px 2px rgba(68,68,68,0.5)
+        }
+        
+        #hire a[href] {
+            position: relative;
+            z-index: 5;
+            text-decoration: none;
+            color: #fff;
+            border-bottom: 1px solid rgba(255,255,255,0.4);
+            transition: color .2s ease;
+
+            hyphens: none;
+            white-space: nowrap;
+        }
+
+        #hire a[href]:after {
+            position: absolute;
+            top: -4px;
+            left: -5px;
+            padding: 3px 5px;
+            width: 100%;
+            height: 100%;
+
+            transition: opacity .2s ease;
+            opacity: 0;
+            background-color: #fff;
+            content: "";
+            z-index: -1;
+
+            border-radius: 2px;
+        }
+        
+        #hire a[href]:hover {
+            color: #444;
+        }
+
+        #hire a[href]:hover:after {
+            opacity: 1;
+        }
+        
+        #hire em {
+            position: relative;
+            font-weight: bold;
+            top: 4px;
+        }
+        
+        #hire:after {
+            content: "";
+            position: absolute;
+            top:100%;
+            left: 0;
+            border: 65px solid #ff6347;
+            border-bottom: 20px solid transparent;
+            border-top: 0;
+
+        }
+        
+        .home blockquote {
+            position: relative;
+            padding-top: 3em;
+        }
+    </style>
+    
+    <div id="hire">
+    Wir stellen ein: <em><a href="stellenbeschreibung.pdf">Erzieher*in <br/> in Vollzeit</a></em>
+    </div>
+	
+<!-- temporary job advertisement END ––>
+	
 	<header class="cd-header">
 		<nav class="cd-main-nav" onclick="this.className = (this.className.match(/expand/) ? this.className.replace(/ +expand/g, '') : this.className + ' expand')">
 			<ul class="no">
